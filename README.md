@@ -25,4 +25,4 @@ Crea una base de datos llamada `products_db` en tu gestor de bases de datos (por
 Una vez creada la base de datos, ejecuta el siguiente script SQL para configurar las tablas necesarias:
 
 ```sql
--- SQL
+SQL.txt
