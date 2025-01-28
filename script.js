@@ -9,7 +9,7 @@ document.getElementById("bodega").addEventListener("change", function () {
       var sucursalSelect = document.getElementById("sucursal");
 
       sucursalSelect.innerHTML =
-        '<option value="" hidden>Selecciona una sucursal</option>';
+        '<option value="">Selecciona una sucursal</option>';
 
       sucursales.map((sucursal) => {
         var option = document.createElement("option");
@@ -21,7 +21,7 @@ document.getElementById("bodega").addEventListener("change", function () {
     xhr.send();
   } else {
     document.getElementById("sucursal").innerHTML =
-      '<option value="" hidden>Selecciona una sucursal</option>';
+      '<option value="">Selecciona una sucursal</option>';
   }
 });
 
@@ -135,6 +135,7 @@ document
 
       if (submitData.status === "success") {
         alert("Formulario enviado correctamente");
+        document.getElementById("productForm").reset();
       } else {
         alert("Error al guardar el producto. Intenta nuevamente.");
       }

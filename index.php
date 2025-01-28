@@ -40,7 +40,7 @@ $monedas = $pdo->query($queryMoneda);
           <div class="form-group">
             <label for="bodega">Bodega</label>
             <select name="bodega" id="bodega" class="form-input">
-              <option value="" hidden>Seleccione una bodega</option>
+              <option value="">Seleccione una bodega</option>
               <?php foreach ($bodegas as $bodega): ?>
                 <option value="<?= $bodega['id'] ?>">
                   <?= $bodega['nombre'] ?>
@@ -58,7 +58,7 @@ $monedas = $pdo->query($queryMoneda);
           <div class="form-group">
             <label for="moneda">Moneda</label>
             <select name="moneda" id="moneda" class="form-input">
-              <option value="" hidden>Seleccione una moneda</option>
+              <option value="">Seleccione una moneda</option>
               <?php foreach ($monedas as $moneda): ?>
                 <option value="<?= $moneda['id'] ?>">
                   <?= $moneda['nombre'] ?>
@@ -105,8 +105,8 @@ $monedas = $pdo->query($queryMoneda);
         </div>
 
         <div class="form-group__textarea">
-          <label for="description">Descripción</label>
-          <textarea id="description" name="descripcion" class="form-textarea"></textarea>
+          <label for="descripcion">Descripción</label>
+          <textarea id="descripcion" name="descripcion" class="form-textarea"></textarea>
         </div>
 
         <div class="btn-container">
