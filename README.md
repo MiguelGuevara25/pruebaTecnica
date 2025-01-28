@@ -19,7 +19,7 @@ Es necesario cambiar algunas variables de entorno para que el programa se ejecut
 
 ## 3. Crear Base de Datos
 
-Crea una base de datos llamada `products_db` en tu gestor de bases de datos (por ejemplo, MySQL).
+Crea una base de datos en PostgreSQL llamada `products_db`
 
 ### 3.1 Script SQL
 Una vez creada la base de datos, ejecuta el siguiente script SQL para configurar las tablas necesarias:
